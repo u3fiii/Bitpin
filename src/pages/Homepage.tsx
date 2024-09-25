@@ -1,9 +1,10 @@
+import BottomNavigation from "../components/common/BottomNavigation";
 import "../styles/homepage/homepage.scss";
 
 const Homepage = () => {
   return (
     <div className="homepage">
-      <h1>این صفحه هومپیج است</h1>
+      <BottomNavigation />
     </div>
   );
 };
