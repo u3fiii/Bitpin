@@ -1,0 +1,38 @@
+@import "../../styles/colors";
+
+.header {
+  background-color: $black2;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  opacity: 0;
+  animation: headerAnimation 0.3s cubic-bezier(0, 0.66, 0.66, 1.16) 0.1s
+    forwards;
+  .header-icons-container {
+    align-items: center;
+    display: flex;
+    gap: 1.2rem;
+    .header-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .logo-container {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@keyframes headerAnimation {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

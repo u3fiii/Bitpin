@@ -1,48 +1,62 @@
 @import "../../styles/colors";
 
 .bottom-navigation {
- background-color: $black2;
- position: absolute;
- bottom: 0;
- width: 100%;
- padding: 0 .5rem;
-.lottie-container {
+  background-color: $black2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 0.5rem;
+  opacity: 0;
+  animation: bottomNavAnimate 0.3s ease-out 0.5s forwards;
+  .lottie-container {
     display: flex;
-flex-direction: row-reverse;
-justify-content: space-between;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
     .nav-item {
-        padding: .5rem 0 .8rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       .nav-icon {
+      padding: 0.5rem 0 0.8rem 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .nav-icon {
         width: 60px;
         height: 40px;
-       }
-       .nav-name {
-        font-size: .7rem;
-        font-family: iranYekanT;
-       }
+      }
+      .nav-name {
+        font-size: 0.7rem;
+        font-family: iranYekanL;
+      }
     }
     .nav-item.active {
-        .nav-name {
-        
-            animation: navTextAnimate .2s ease-out forwards .25s;
-        }
+      .nav-name {
+        animation: navTextAnimate 0.2s ease-out forwards 0.25s;
+      }
     }
+  }
 }
-}
-
 
 @keyframes navTextAnimate {
-    0%{
-        transform: scale(1);
-        color: $stone7;
-    } 50% {
-        transform: scale(.90);
-    } 100% {
-        color: $Emerald1;
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+    color: $stone7;
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    color: $Emerald1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bottomNavAnimate {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

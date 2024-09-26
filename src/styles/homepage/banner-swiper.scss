@@ -1,0 +1,64 @@
+@import "../../styles//colors";
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper {
+  padding-bottom: 24px;
+  padding-top: 16px;
+  opacity: 0;
+  animation: moveUpAnimation 0.3s ease-out 0.4s forwards;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 10rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* Positioning the pagination */
+.swiper-pagination {
+  position: absolute; /* Make it absolute */
+  transform: translateY(10px);
+}
+
+.swiper-pagination-bullet {
+  width: 6px; /* Set width for square bullets */
+  height: 6px; /* Set height for square bullets */
+  background: $gray3; /* Color for inactive bullets */
+  opacity: 1; /* Ensure opacity is set to 1 */
+  transition: all 0.2s ease-out;
+  border-radius: 1rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: $Emerald2; /* Color for active bullet */
+  height: 6px;
+  width: 16px;
+  transition: all 0.2s ease-out;
+}
+
+@keyframes moveUpAnimation {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
