@@ -5,7 +5,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 0 0.5rem;
+  padding: 0;
   opacity: 0;
   animation: bottomNavAnimate 0.3s ease-out 0.5s forwards;
   .lottie-container {
@@ -20,12 +20,16 @@
       flex-direction: column;
       align-items: center;
       .nav-icon {
-        width: 60px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
       }
       .nav-name {
         font-size: 0.7rem;
         font-family: iranYekanL;
+        color: #818383;
+      }
+      &.active {
+        animation: rippleEffect 0.4s ease-out forwards;
       }
     }
     .nav-item.active {
@@ -39,7 +43,7 @@
 @keyframes navTextAnimate {
   0% {
     transform: scale(1);
-    color: $stone7;
+    color: #818383;
   }
   50% {
     transform: scale(0.9);
@@ -58,5 +62,17 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes rippleEffect {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
   }
 }

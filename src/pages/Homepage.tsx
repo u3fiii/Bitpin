@@ -10,14 +10,19 @@ import CryptoPrice from "../components/homepage/CryptoPrice";
 const Homepage = () => {
   return (
     <div className="homepage">
-      <Header />
-      <div className="homepage-content">
-        <WealthCard />
-        <HomeProducts />
+      <div className="responsive-message">
+        <p>با موبایل وارد شوید و یا سایز مرورگر را به موبایل تغییر دهید.</p>
       </div>
-      <BannerSwiper />
-      <CryptoPrice />
-      <BottomNavigation />
+      <div className="homepage-wrapper">
+        <Header />
+        <div className="homepage-content">
+          <WealthCard />
+          <HomeProducts />
+        </div>
+        <BannerSwiper />
+        <CryptoPrice />
+        <BottomNavigation />
+      </div>
     </div>
   );
 };

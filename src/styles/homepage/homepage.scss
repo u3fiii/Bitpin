@@ -1,12 +1,34 @@
 @import "../../styles//colors.scss";
 
 .homepage {
-  background-color: $black1;
-  .homepage-content {
-    padding: 1rem;
+  .responsive-message {
     display: flex;
-    flex-direction: column;
+    direction: rtl;
+    text-align: center;
+    height: 100vh;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
+  }
+  .homepage-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage {
+    background-color: $black1;
+    .responsive-message {
+      display: none;
+    }
+    .homepage-wrapper {
+      display: block;
+      .homepage-content {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
   }
 }
