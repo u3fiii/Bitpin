@@ -1,9 +1,10 @@
 import "../../styles/common/header.scss";
 
 import logo from "../../assets/icons/logo1_Dark.svg";
-import profile from "../../assets/icons/profile.svg";
-import headphone from "../../assets/icons/headphone.svg";
-import notification from "../../assets/icons/notification.svg";
+// import profile from "../../assets/icons/profile.svg";
+// import headphone from "../../assets/icons/headphone.svg";
+// import notification from "../../assets/icons/notification.svg";
+import SwitchRive from "./SwitchRive";
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
         <img src={logo} />
       </div>
       <div className="header-icons-container">
-        <div className="header-icon">
+        {/* <div className="header-icon">
           <img src={profile} />
         </div>
         <div className="header-icon">
@@ -20,7 +21,9 @@ const Header = () => {
         </div>
         <div className="header-icon">
           <img src={notification} />
-        </div>
+        </div> */}
+
+        <SwitchRive />
       </div>
     </div>
   );

@@ -16,6 +16,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@rive-app/react-canvas": "^4.16.7",
     "axios": "^1.7.7",
     "chart.js": "^4.4.4",
     "gh-pages": "^6.2.0",

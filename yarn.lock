@@ -424,6 +424,18 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@rive-app/canvas@2.23.11":
+  version "2.23.11"
+  resolved "https://registry.yarnpkg.com/@rive-app/canvas/-/canvas-2.23.11.tgz#4aaeaa679b43299e46d044fb8a3e7c3a9a8edc96"
+  integrity sha512-guP2youHA1yFegD8ziiPEtkUXJs+wwkPh6lV3ihfyvUlLXgDDLwccD/ypAbKej1zBee7Z9tlp0c9oehHEEkLMg==
+
+"@rive-app/react-canvas@^4.16.7":
+  version "4.16.7"
+  resolved "https://registry.yarnpkg.com/@rive-app/react-canvas/-/react-canvas-4.16.7.tgz#ecffa6c2056bc4dc8803855860c21528e12ec4f4"
+  integrity sha512-T2X7Y8DpfZvV4EYPQ2Mhbjt2b5nMitjhWmpsMI75Z/idUVZk+6yW8e9vd0Ffy5oGMdv7c5mO8p8RE0vinkzNNw==
+  dependencies:
+    "@rive-app/canvas" "2.23.11"
+
 "@rollup/rollup-android-arm-eabi@4.22.4":
   version "4.22.4"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.22.4.tgz#8b613b9725e8f9479d142970b106b6ae878610d5"
